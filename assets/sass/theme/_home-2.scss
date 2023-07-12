@@ -1,0 +1,346 @@
+/* Home Page 02 */
+.hero-section-2 {
+    background-image: url('../images/home-2-hero-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding: 200px 0;
+
+    @include tablet {
+        padding: 120px 0;
+    }
+
+    @include mobile-all {
+        padding: 80px 0;
+    }
+
+    .tagline {
+        color: $secondary-color;
+        font-size: 20px;
+        text-transform: capitalize;
+        font-weight: 500;
+    }
+
+    .button-part {
+        display: flex;
+        align-items: center;
+
+        img {
+            width: 40px;
+        }
+
+        span {
+            color: $paragraph-color;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+    }
+
+    .hero-image {
+        position: relative;
+        z-index: 1;
+
+        @include tablet {
+            display: none;
+        }
+
+        @include landscape-phone {
+            display: none;
+        }
+
+        @include portrait-phone {
+            display: none;
+        }
+
+        .hero-shape {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+    }
+}
+
+.about-section.about-section-2 {
+    padding: 120px 0 100px;
+
+    @include mobile-all {
+        padding: 80px 0 60px;
+    }
+
+    .image-area {
+        position: relative;
+        z-index: 1;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 60%;
+            height: 80%;
+            background-color: $bg-two-color;
+            border-radius: 5px;
+            z-index: -1;
+        }
+
+        .main-image {
+            border-radius: 5px;
+            padding: 0 0 30px 30px;
+            width: 95%;
+
+            @include tablet {
+                width: 100%;
+            }
+
+            @include landscape-phone {
+                width: 100%;
+            }
+
+            @include portrait-phone {
+                width: 100%;
+            }
+        }
+
+        .shape-image {
+            position: absolute;
+            left: 50px;
+            bottom: 50px;
+            width: auto;
+        }
+    }
+
+    .about-content {
+        @include tablet {
+            margin-top: 40px;
+        }
+
+        @include landscape-phone {
+            margin-top: 40px;
+        }
+
+        @include portrait-phone {
+            margin-top: 40px;
+        }
+
+        span.divider {
+            width: 100px;
+            height: 3px;
+            background-color: $secondary-color;
+            display: block;
+            margin: 15px 0;
+        }
+    }
+}
+
+.category-section-2 {
+    padding-bottom: 180px;
+
+    @include tablet {
+        padding-bottom: 100px;
+    }
+
+    @include mobile-all {
+        padding-bottom: 60px;
+    }
+
+    .category-slider {
+        .single-category {
+            text-align: center;
+            text-transform: capitalize;
+            padding: 60px 20px;
+            border: 1px solid $secondary-color;
+            border-radius: 5px;
+            transition: $transition;
+
+            &:hover {
+                border: 1px solid transparent;
+                background-color: $white-color;
+                box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+
+                h4 {
+                    a {
+                        color: $secondary-color;
+                    }
+                }
+            }
+
+            img {
+                width: auto;
+                margin: auto;
+            }
+
+            h4 {
+                a {
+                    color: $heading-color;
+                    transition: $transition;
+                }
+            }
+
+            span {
+                font-size: 20px;
+                display: block;
+            }
+        }
+
+        .prev-arrow,
+        .next-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 16px;
+            background-color: $white-color;
+            border: 1px solid $secondary-color;
+            color: $secondary-color;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            border-radius: 50%;
+            text-align: center;
+            cursor: pointer;
+            transition: $transition;
+            z-index: 1;
+
+            &:hover {
+                color: $white-color;
+                background-color: $secondary-color;
+                border: 1px solid transparent;
+            }
+        }
+
+        .prev-arrow {
+            left: -8px;
+        }
+
+        .next-arrow {
+            right: -8px;
+        }
+
+        .slick-slide {
+            margin: 20px 15px;
+        }
+    }
+}
+
+.video-section {
+    background-image: url('../images/video-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .video-content {
+        padding: 120px 0;
+
+        @include tablet {
+            padding: 120px 0 60px;
+        }
+
+        @include mobile-all {
+            padding: 80px 0 20px;
+        }
+
+        h2,
+        p,
+        span {
+            color: $white-color
+        }
+
+        span.tagline,
+        span.phone-number {
+            font-size: 20px;
+            font-weight: 500;
+            text-transform: capitalize;
+            display: block;
+        }
+    }
+
+    .video-area {
+        position: relative;
+
+        @include tablet {
+            padding-bottom: 120px;
+        }
+
+        @include mobile-all {
+            padding-bottom: 80px;
+        }
+
+        img {
+            position: relative;
+            top: -80px;
+            width: 110%;
+
+            @include screen-1200 {
+                width: 100%;
+            }
+
+            @include desktop {
+                width: 100%;
+            }
+
+            @include tablet {
+                top: 0;
+                width: 100%;
+            }
+
+            @include landscape-phone {
+                top: 0;
+                width: 100%;
+            }
+
+            @include portrait-phone {
+                top: 0;
+                width: 100%;
+            }
+        }
+
+        .video-play-button {
+            position: absolute;
+            top: 35%;
+            left: 50%;
+
+            a {
+                color: $secondary-color;
+                font-size: 30px;
+                width: 75px;
+                height: 75px;
+                line-height: 30px;
+                background-color: $white-color;
+                border-radius: 50%;
+                display: inline-block;
+                padding: 25px;
+            }
+        }
+    }
+}
+
+.course-section.course-section-2 {
+    background-color: $white-color;
+    padding-bottom: 210px;
+
+    @include desktop {
+        padding-bottom: 180px;
+    }
+
+    @include tablet {
+        padding-bottom: 90px;
+    }
+
+    @include mobile-all {
+        padding-bottom: 50px;
+    }
+}
+
+.feedback-section.feedback-section-2 {
+    background-color: $bg-one-color;
+    padding-top: 115px;
+
+    @include mobile-all {
+        padding-top: 75px;
+    }
+}
+
+.blog-section.blog-section-2 {
+    background-color: $white-color;
+}

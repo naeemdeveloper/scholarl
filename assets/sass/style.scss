@@ -1,0 +1,66 @@
+/*-------------------------------------------------------------
+Template Name: Scholarl
+Template URL: 
+Author Name: Speed Digit
+Author URL: https://themeforest.net/user/codebasket
+Version: 1.0
+Description: 
+Tags: education, lms, course
+Text Domain: scholarl
+-------------------------------------------------------------*/
+
+/*------------------------------------------------------------- 
+TABLE OF CONTENTS: 
+---------------------------------------------------------------
+>> Author CSS
+>> Navbar
+>> Header Section
+>> Footer Section
+>> Breadcrumb Section
+>> Preloader
+>> Button 
+>> Form
+>> Defalult
+>> Home Page 01
+>> Home Page 02
+>> Home Page 03
+>> Course Page
+>> Blog Page
+>> FAQ Page
+>> Blog Details Page
+>> Course Details Page
+>> Contact Page
+>> Login Page
+--------------------------------------------------------------*/
+
+// Setting
+@import 'settings/variable';
+@import 'settings/mixin';
+
+// Base
+@import 'base/base';
+
+// Layout
+@import 'layout/navbar';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/breadcrumb';
+
+// Module
+@import 'module/preloader';
+@import 'module/button';
+@import 'module/accordion';
+@import 'module/form';
+
+// Theme 
+@import 'theme/default';
+@import 'theme/home-1';
+@import 'theme/home-2';
+@import 'theme/home-3';
+@import 'theme/course';
+@import 'theme/blog';
+@import 'theme/faq';
+@import 'theme/blog-details';
+@import 'theme/course-details';
+@import 'theme/contact';
+@import 'theme/login';

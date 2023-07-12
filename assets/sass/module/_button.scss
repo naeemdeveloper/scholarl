@@ -1,0 +1,47 @@
+/* Button */
+.template-btn {
+    color: $white-color;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    text-align: center;
+    display: inline-block;
+    padding: 14px 40px;
+    background-color: $secondary-color;
+    transition: $transition;
+    border-radius: 5px;
+
+    @include screen-320 {
+        font-size: 14px;
+        padding: 14px 24px;
+    }
+
+    &:hover {
+        color: $white-color;
+        background-color: $primary-color;
+    }
+}
+
+.template-btn.btn-2 {
+    color: $primary-color;
+    background-color: transparent;
+    border: 1px solid $primary-color;
+
+    &:hover {
+        color: $white-color;
+        background-color: $secondary-color;
+        border: 1px solid transparent;
+    }
+}
+
+.template-btn.btn-2.btn-3 {
+    color: $secondary-color;
+    background-color: transparent;
+    border: 1px solid $secondary-color;
+
+    &:hover {
+        color: $white-color;
+        background-color: $primary-color;
+        border: 1px solid transparent;
+    }
+}

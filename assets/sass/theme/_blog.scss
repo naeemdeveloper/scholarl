@@ -1,0 +1,38 @@
+/* Blog Page */
+.blog-section.blog-page {
+    background-color: $white-color;
+
+    .blog-pagination {
+        margin-top: 30px;
+
+        ul {
+            li {
+                display: inline-block;
+                width: 30px;
+                height: 30px;
+                border: 1px solid $border-color;
+                text-align: center;
+                line-height: 30px;
+                transition: $transition;
+                cursor: pointer;
+
+                +li {
+                    margin-left: 10px;
+                }
+
+                &:hover {
+                    color: $white-color;
+                    background-color: $primary-color;
+                    border: 1px solid transparent;
+                }
+            }
+
+            .active {
+                color: $white-color;
+                background-color: $primary-color;
+                border: 1px solid transparent;
+            }
+        }
+    }
+
+}

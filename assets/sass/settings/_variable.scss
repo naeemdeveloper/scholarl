@@ -1,0 +1,32 @@
+// Template Font Name
+$template-font: 'Roboto', sans-serif;
+
+// Template Color Name
+$primary-color: #126d63;
+$secondary-color: #fe630e;
+$heading-color: #102039;
+$paragraph-color: #606060;
+$white-color: #ffffff;
+$black-color: rgb(0, 0, 0);
+$yellow-color: #fed619;
+$border-color: #eaeaea;
+$bg-one-color: #fffcf3;
+$bg-two-color: #e3f0ff;
+$bg-three-color: #fff1f3;
+$contact-info-bg: #F6F9FE;
+
+// Social Media Color
+$facebook: #3b5999;
+$twitter: #55acee;
+$dribbble: #ea4c89;
+$behance: #131418;
+$google: #F3B605;
+$google-plus: #dd4b39;
+$linkedin: #0077B5;
+$instagram: #e4405f;
+
+// Google Font
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+// Transition
+$transition: all .3s ease-in;

@@ -1,0 +1,22 @@
+/* Login Page */
+.login-page {
+    span.or {
+        display: block;
+        font-size: 20px;
+        font-weight: 500;
+        margin: 10px 0;
+    }
+
+    .login-facebook {
+        background-color: $facebook;
+        width: 100%;
+        display: inline-block;
+    }
+
+    .login-google {
+        background-color: $google;
+        width: 100%;
+        display: inline-block;
+        margin-top: 30px;
+    }
+}

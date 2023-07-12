@@ -1,0 +1,77 @@
+/* Contact Page */
+.contact-section {
+    .single-contact-info {
+        padding: 0 20px 30px;
+        text-align: center;
+        border-radius: 5px;
+        position: relative;
+        margin-bottom: 30px;
+        z-index: 1;
+
+        &:hover {
+            &::before {
+                box-shadow: 0 5px 10px rgba($black-color, .1);
+            }
+
+            i {
+                background-color: $secondary-color;
+            }
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 88%;
+            background-color: $contact-info-bg;
+            transition: $transition;
+            z-index: -1;
+        }
+
+        i {
+            color: $white-color;
+            background-color: $heading-color;
+            font-size: 20px;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            margin-bottom: 30px;
+            transition: $transition;
+        }
+    }
+
+    .google-map {
+        iframe {
+            width: 100%;
+            height: 550px;
+
+            @include tablet {
+                height: 400px;
+            }
+
+            @include landscape-phone {
+                height: 400px;
+            }
+
+            @include portrait-phone {
+                height: 400px;
+            }
+        }
+
+        @include tablet {
+            margin-top: 60px;
+        }
+
+        @include landscape-phone {
+            margin-top: 60px;
+
+        }
+
+        @include portrait-phone {
+            margin-top: 60px;
+        }
+    }
+}
